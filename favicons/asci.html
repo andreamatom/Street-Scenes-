@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asci art generator</title>
+<style>
+    button {
+        border: 2px solid black;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: white;
+        box-shadow: 2px 2px 0 black;
+        cursor: pointer;
+        margin: 10px 0px;
+        font-family: monospace;
+    }
+</style>
+
+</head>
+<body>
+    <button onclick="changeOurCSS()">Let’s go rando!!!</button>
+	<p id="output"></p>
+
+	<script>
+		var outputElement = document.querySelector('#output');
+
+		// Try editing these arrays or adding your own!
+		var textOptions = [
+			"hi there!",
+			"what’s up!",
+			"who are you????",
+			"how are you????",
+			"bleh",
+			"dogfishcatface"
+		];
+
+		var colorOptions = [
+			"red",
+			"green",
+			"blue",
+			"rgb(100,100,100)",
+			"#a690fc"
+		]
+
+		function changeOurCSS() {
+			// Pick random text
+			var randomTextIndex = Math.floor(Math.random()*textOptions.length);
+			var randomTextEntry = textOptions[randomTextIndex];
+			outputElement.innerText = randomTextEntry;
+
+			// Pick random color
+			var randomColorIndex = Math.floor(Math.random()*colorOptions.length);
+			var randomColorEntry = colorOptions[randomColorIndex];
+			outputElement.style.color = randomColorEntry;
+
+			// Pick random font size
+			// Notice that we need to add units to the end on the previous line
+			var randomFontSize = Math.random()*100;
+			outputElement.style.fontSize = randomFontSize + "px";
+
+			// Try adding your own code here!
+			
+		}
+
+    
+</body>
+</html>

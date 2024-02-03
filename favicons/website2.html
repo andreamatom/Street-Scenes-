@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Experiments</title>
+   <style>
+  button {
+			border: 2px solid black;
+			padding: 10px 20px;
+			font-size: 18px;
+			background-color: white;
+			box-shadow: 2px 2px 0 black;
+			cursor: pointer;
+			margin: 10px 0px;
+			font-family: monospace;
+		}
+
+   </style>
+</head>
+<button onclick="alert('You clicked on the alert!')">Hey, click me!</button>
+<br>
+<button onclick="alert((2+29-4+16)/2)">What’s (2+29-4+16)/2?</button><br>
+<br>
+	<button onclick="alert('Hello'+100+100)">"Hello" + 100 + 100</button><br>
+    <br>
+
+    <button onclick="myFirstFunction()">This button runs a custom function called myFirstFunction()</button>
+    <script>
+        function myFirstFunction() {
+            alert("hi!");
+            alert("what’s up!");
+        }
+    </script>
+    <br>
+
+    <button onclick="mySecondFunction('hello')">hey therr!</button>
+    <script>
+        function mySecondFunction(aRandomArgumentName) {
+            alert(aRandomArgumentName);
+        }
+    </script>
+
+    <br> 
+    <button onclick="alert(myFirstVariable)">Read value of myFirstVariable</button><br>
+		<button onclick="alert(myFirstVariable)">Read value of mySecondVariable</button>
+		<script>
+			var myFirstVariable = "I’m a variable!";
+			var mySecondVariable = 100;
+		</script>
+<br>
+<script>
+    var totalClicks = 0;
+    function numberOfClicks() {
+        totalClicks = totalClicks + 1;
+        if (totalClicks == 5) {
+            alert('That was 5 clicks!');
+        } else {
+            alert('Not there yet!')
+        }
+    }
+
+    <br>
+
+
+		<button onclick="alert(myFirstArray[0])">Access the first (0th) item of an array, a.k.a. myFirstArray[0]</button><br>
+		<button onclick="alert(myFirstArray[4])">myFirstArray[4]</button>
+		<script>
+			var myFirstArray = ["Hello", "What’s up?", 0, 100, 200];
+		</script>
+    
+    <br>
+
+	<button onclick="moveThroughTheArray2()">Let’s try this again!</button>
+	</p>
+	<script>
+		var currentEntry2 = 0;
+		function moveThroughTheArray2() {
+			alert(mySecondArray[currentEntry2])
+			currentEntry2 = currentEntry2 + 1;
+			if (currentEntry2 == mySecondArray.length) {
+				currentEntry2 = 0}
+
+        <br> </br>
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

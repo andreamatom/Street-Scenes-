@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise A</title>
+    <style>
+    button {
+        border: 2px solid black;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: white;
+        box-shadow: 2px 2px 0 black;
+        cursor: pointer;
+        margin: 10px 0px;
+        font-family: monospace;
+    }
+</style>
+
+</head>
+<body>
+
+    <button onclick="moveThroughTheArray()">Hey! Click me!</button>
+    <script>
+        var mySecondArray = ["Hi there", "I’m gabriel", "who are you?", "what are you doing?"];
+        var currentEntry = 0;
+        function moveThroughTheArray() {
+            alert(mySecondArray[currentEntry]);
+            currentEntry = currentEntry + 1;
+            if (currentEntry == mySecondArray.length) {
+           currentEntry = 0;}
+        }  
+    </script>
+
+<br>
+
+    <button onclick="alert(myArray[Math.floor(Math.random()*myArray.length)])">Random entry from the array</button>
+    <script>
+        var myArray = ['hi', 'hello', 'whatsup'];
+    </script>
+
+</body>
+</html>

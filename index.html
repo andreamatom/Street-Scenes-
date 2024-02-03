@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicons/favicon-07.png">
+
+    <title>Street Scenes</title>
+    <style>
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+			width: 100vw;
+			height: 100vh;
+		}
+		.grid div {
+			border: none;
+			background-size: cover;
+		}
+
+
+        body {
+            background-image: url(images/street4.png);
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-cursor1 {
+            cursor: url('cursor.png'), auto; 
+        }
+
+
+
+
+	</style>
+</head>
+<body class="custom-cursor1">
+  
+    <div class="grid">
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+        <div onmouseenter="changeImage(this)"></div>
+     
+    </div>
+    <script>
+        let imageOptions = [
+            'images/street1.png',
+            'images/street2.png',
+            'images/street3.png',
+            'images/street4.png',
+            'images/street5.png',
+            'images/street6.png',
+            'images/street7.png',
+            'images/street8.png'
+        ];
+
+        function changeImage(element) {
+            var index = Math.floor(Math.random() * imageOptions.length);
+            var entry = imageOptions[index];
+            element.style.backgroundImage = "url(" + entry + ")";
+        }
+
+    </script>
+</body>
+</html>
